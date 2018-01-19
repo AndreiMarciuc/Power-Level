@@ -1,0 +1,15 @@
+<h2>
+  Initial power level :
+<form (submit)="onclick()">
+<input type="number" name="number" min="1" max="100" step="1" [(ngModel)]="level" >
+<input type="submit" value="Calculate Powers">
+
+</form>
+</h2>
+<app-human [myPower]="power"></app-human>
+
+<app-saiyan [myPower]="power"></app-saiyan>
+<app-super-sayian [myPower]="power"></app-super-sayian>
+<app-super-sayian-two [myPower]="power"></app-super-sayian-two>
+<app-super-sayian-three [myPower]="power"></app-super-sayian-three>
+<app-super-sayian-four [myPower]="power"></app-super-sayian-four>
